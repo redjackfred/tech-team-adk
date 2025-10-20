@@ -7,7 +7,7 @@ from . import prompt
 research_manager_agent = Agent(
     model="gemini-2.5-flash",
     name="research_manager_agent",
-    description="Gathers all necessary information, from web search to documentation analysis, to support the development team",
+    description="Gathers all necessary information from web search to support the development team",
     instruction=prompt.RESEARCH_MANAGER_PROMPT,
     sub_agents=[web_search_agent],
 )
